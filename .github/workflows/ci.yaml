@@ -18,7 +18,7 @@ jobs:
             aws-region: us-east-1
       - name: Sync files to s3
         run: |
-            aws s3 sync . s3://${{ secrets.BUCKET_NAME }} --delete --exclude "*" --include "index.html" --include "style.css"
+            aws s3 sync . s3://${{ secrets.BUCKET_NAME }} --delete --exclude "*" --include "index.html" --include "style.css" --include "style.css"
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2
         env:
