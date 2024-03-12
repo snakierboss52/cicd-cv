@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 
+/* styles.css */
+
+/* Estilos para el contenedor principal */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#pdfContainer {
+    height: 100%; /* Ocupa toda la altura del viewport */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Estilos para el lienzo del PDF */
+canvas {
+    /* Estilos adicionales según sea necesario */
+    max-width: 100%; /* Ajustar el ancho del lienzo al contenedor */
+    max-height: 100%; /* Ajustar la altura del lienzo al contenedor */
+}
+
 * {
 	padding: 0;
 	margin: 0;

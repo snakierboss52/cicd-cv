@@ -9,7 +9,6 @@ jobs:
     steps:
       - name: Clone Repo
         uses: actions/checkout@v3
-      
       - name: Setup AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -18,7 +17,7 @@ jobs:
             aws-region: us-east-1
       - name: Sync files to s3
         run: |
-            aws s3 sync . s3://${{ secrets.BUCKET_NAME }} --delete --exclude "*" --include "index.html" --include "style.css" --include "style.css"
+            aws s3 sync . s3://${{ secrets.BUCKET_NAME }} --delete --exclude "*" --include "index.html" --include "renderPdf.js" --include "style.css" --include "azureAiViewer.html"
       
       - name: Invalidate Caches from AWS Cloudfront Distribution
         id: invalidate_caches

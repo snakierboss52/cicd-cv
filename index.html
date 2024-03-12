@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="application-name" content="JorgeLozanoCV">
+  <meta name="description" content="A static website with resume of my CV">
   <title>Jorge Lozano CV</title>
   <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
   <script src="https://unpkg.com/feather-icons"></script>
@@ -68,10 +70,15 @@
         </div>
         <div class="certification_item">
           <h3 class="item_title">
-            <a style="TEXT-DECORATION: underline" href="https://s3.amazonaws.com/jorge-lozano.com/certificates/AI-102T00-A+WTC_Jorge+Humberto+Lozano+Arenas2904.pdf">AI-102T00-A - Designing and Implementing a Microsoft Azure AI Solution - 2024 </a>
+            <a style="TEXT-DECORATION: underline" onclick="openPDFViewer()">AI-102T00-A - Designing and Implementing a Microsoft Azure AI Solution - 2024 </a>
           </h3>
         </div>
       </div>
+      <script>
+        function openPDFViewer() {
+            window.open('azureAiViewer.html', '_blank');
+        }
+    </script>
 
       <div class="edu">
         <h3 class="title">Education</h3>
