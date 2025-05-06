@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset basico */
 * {
 	margin: 0;
 	padding: 0;
@@ -15,7 +15,7 @@
   }
   
   
-  /* Tipografía base */
+  /* Tipografia base */
   body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.6;
@@ -24,7 +24,7 @@
 	padding: 20px;
   }
   
-  /* Títulos */
+  /* Titulos */
   .title {
 	font-size: 1.5rem;
 	margin-bottom: 10px;
