@@ -1,222 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="application-name" content="JorgeLozanoCV">
-  <meta name="description" content="Static website showcasing the resume of Jorge Lozano, a DevOps and Cloud Engineer.">
-  <meta name="keywords" content="DevOps, Cloud Engineer, AWS, Kubernetes, Terraform, Resume, Jorge Lozano">
+  <meta name="description" content="Jorge Lozano — Senior Software Engineer focused on Cloud, Kubernetes, and Platform Engineering.">
+  <meta name="keywords" content="Senior Software Engineer, Platform Engineer, Kubernetes, AWS, Cloud Architecture, IDP, Jorge Lozano">
   <meta name="author" content="Jorge Lozano">
-  <title>Jorge Lozano - DevOps & Cloud Engineer CV</title>
+  <title>Jorge Lozano — Senior Software Engineer</title>
   <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-  <header class="profile">
-    <div class="profile_container">
-      <div class="profile_profileImg">
-        <img src="./images/profile.png" alt="Profile picture of Jorge Lozano">
-      </div>
-  
-      <div class="profile_content-wrapper">
 
-        <div class="profile_content">
-          <h1 class="profile_name">
-            <span class="profile_name_firstName">Jorge</span>
-            <span class="profile_name_lastName">Lozano</span>
-          </h1>
-          <p class="profile_title">DevOps Engineer | Software Engineer</p>
-          <p class="profile_title">AWS Solutions Architect Certified Associate </p>
-          <p class="description profile_description">
-            🚀 Cloud & DevOps Engineer | Infrastructure Automation | Kubernetes | AWS Solutions Architect
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
 
-            Cloud and DevOps Engineer with 4+ years of experience in designing, automating, and managing modern cloud-native architectures. Skilled in developing backend services, automating infrastructure provisioning, and implementing CI/CD pipelines for scalable, resilient systems.
-  
-            My expertise spans designing and deploying scalable microservices architectures, implementing GitOps practices, and provisioning cloud resources.
-  
-            💻 Tech Stack:
-  
-            • Languages & Frameworks: Java (Spring Boot), Golang, Python, Scala
-            • Cloud & IaC: AWS, Kubernetes (EKS), Terraform, Packer, CloudFormation, SAM
-            • DevOps & CI/CD: Jenkins, GitLab CI/CD, CircleCI, ArgoCD, FluxCD, Kustomize
-            • Monitoring & Observability: Datadog, ELK Stack (on-prem & cloud), New Relic
-            • Testing & Automation: Appium, JMeter, K6, Gatling, BDD
-            • Configuration Management: Ansible, Puppet, Bash scripting
-  
-            ⚙️ Key Responsibilities & Achievements:
-  
-            - Designed and managed cloud infrastructure to support multiple microservices.  
-            - Implemented GitOps workflows using Knative, FluxCD, ArgoCD, and Kustomize.  
-            - Automated provisioning of AWS services, including Lambda, API Gateway, Secrets Manager, RDS, DMS, CloudFormation, and SAM Templates.  
-            - Optimized containerized applications on EKS, EC2, ECS, and Fargate.  
-            - Managed AWS networking and load balancing, including VPC, Route 53, ALB, NLB, and security groups.
-  
-            I am passionate about automation, cloud computing, and building resilient infrastructure.
-          </p>
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <div class="avatar-wrap">
+          <img src="./images/profile.png" alt="Jorge Lozano" class="avatar">
+          <div class="avatar-ring"></div>
         </div>
-  
-        <aside class="skills">
-          <h3 class="title">Expertise</h3>
-          <ul class="skills_list description">
-            <li>Kubernetes</li>
-            <li>Cloud Architecture</li>
-            <li>AWS Services</li>
-            <li>Serverless</li>
-            <li>Python</li>
-            <li>Google Cloud</li>
-            <li>GitOps</li>
-            <li>Golang</li>
-            <li>ELK Stack</li>
-            <li>Jenkins</li>
-            <li>SonarQube</li>
-            <li>GitHub Actions</li>
-            <li>Infrastructure as Code (IaC)</li>
-            <li>Terraform</li>
-            <li>Packer</li>
-            <li>Java (Spring Boot)</li>
-            <li>Gradle & Maven</li>
-            <li>JMeter & Gatling</li>
-            <li>BDD Testing</li>
-            <li>Appium & API Testing</li>
-            <li>Load Testing with K6</li>
-          </ul>
-        </aside>
+
+        <div class="name-block">
+          <p class="name-label">// engineer</p>
+          <h1 class="name">Jorge<br>Lozano</h1>
+          <p class="role">Senior Software Engineer</p>
+          <p class="role-sub">Cloud · Kubernetes · Platform</p>
+        </div>
+
+        <div class="badge-stack">
+          <span class="badge badge--gold">★ AWS Community Builder</span>
+          <span class="badge badge--blue">AWS Solutions Architect — Associate</span>
+        </div>
       </div>
-    </div>
-  </header>  
 
-  <main>
-    <section class="experience">
-      <h3 class="title">Experience</h3>
+      <nav class="sidebar__nav">
+        <a href="#experience" class="nav-link active"><span class="nav-dot"></span>Experience</a>
+        <a href="#stack" class="nav-link"><span class="nav-dot"></span>Tech Stack</a>
+        <a href="#certifications" class="nav-link"><span class="nav-dot"></span>Certifications</a>
+        <a href="#education" class="nav-link"><span class="nav-dot"></span>Education</a>
+        <a href="#contact" class="nav-link"><span class="nav-dot"></span>Contact</a>
+      </nav>
 
-      <article class="exp_item">
-        <h4 class="item_title">Mercadolibre - Software Engineer</h4>
-        <p class="item_preTitle">May. 2024 - Present</p>
-          <ul class="description">
-            <li>EKS Administration & Automated infrastructure provisioning at scale</li>
-            <li>Built scalable GitOps-based provisioning pipelines for EKS cluster management</li>
-            <li>Developed internal tools for end-to-end cluster monitoring and observability</li>
-            <li>Performance optimization and resource management</li>
+      <div class="sidebar__links">
+        <a href="https://github.com/snakierboss52/" target="_blank" class="social-link">
+          <i data-feather="github"></i><span>snakierboss52</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jorge-lozano-arenas" target="_blank" class="social-link">
+          <i data-feather="linkedin"></i><span>Jorge Lozano Arenas</span>
+        </a>
+        <a href="https://medium.com/@jlozanoa6" target="_blank" class="social-link">
+          <i data-feather="edit-3"></i><span>Medium Articles</span>
+        </a>
+        <a href="https://wa.me/+573005302178" class="social-link">
+          <i data-feather="phone"></i><span>+57 300 530 2178</span>
+        </a>
+        <span class="social-link no-link">
+          <i data-feather="map-pin"></i><span>Bogotá, Colombia</span>
+        </span>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="content">
+
+      <!-- HERO -->
+      <section class="hero">
+        <p class="hero__eyebrow">// profile</p>
+        <h2 class="hero__headline">Building cloud-native systems<br>that scale without the drama.</h2>
+        <p class="hero__body">
+          Senior Software Engineer with 4+ years designing and operating cloud-native infrastructure at scale.
+          Deep expertise in Kubernetes platform engineering, Internal Developer Platforms (IDPs), AWS Solutions Architecture,
+          and GitOps workflows. I bridge the gap between software development and infrastructure — writing backend
+          services, building platforms developers love, and owning the reliability of the systems underneath.
+        </p>
+        <div class="hero__pills">
+          <span class="pill">Kubernetes / EKS</span>
+          <span class="pill">Platform Engineering</span>
+          <span class="pill">IDP Development</span>
+          <span class="pill">AWS Architecture</span>
+          <span class="pill">GitOps</span>
+          <span class="pill">Java · Go · Python</span>
+          <span class="pill">Observability</span>
+          <span class="pill">FinOps</span>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <h3 class="section__title"><span class="section__num">01</span>Experience</h3>
+
+        <article class="exp-card exp-card--featured">
+          <div class="exp-card__header">
+            <div>
+              <p class="exp-card__company">MercadoLibre</p>
+              <h4 class="exp-card__title">Senior Software Engineer</h4>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">May 2024 — Present</span>
+              <span class="exp-tag exp-tag--current">Current</span>
+            </div>
+          </div>
+          <ul class="exp-card__list">
+            <li><strong>Kubernetes platform at scale</strong> — EKS cluster administration and automated infrastructure provisioning serving hundreds of internal teams across Latin America.</li>
+            <li><strong>IDP development</strong> — Built scalable GitOps-based provisioning pipelines for EKS cluster lifecycle management, reducing time-to-cluster from days to minutes.</li>
+            <li><strong>Observability tooling</strong> — Developed internal tools for end-to-end cluster monitoring, health scoring, and proactive alerting.</li>
+            <li><strong>Performance &amp; reliability</strong> — Resource optimization, capacity planning, and cost management across multi-region EKS fleets.</li>
           </ul>
-      </article>
+          <div class="exp-card__tags">
+            <span>Kubernetes</span><span>EKS</span><span>GitOps</span><span>FluxCD</span><span>ArgoCD</span><span>Golang</span><span>Observability</span><span>Java</span>
+          </div>
+        </article>
 
-      <article class="exp_item">
-        <h4 class="item_title">Vozy - DevOps Engineer Consultant</h4>
-        <p class="item_preTitle">Feb. 2024 - Mar. 2024</p>
-        <ul class="description">
-          <li>Designed EKS-based cloud architecture supporting multiple microservices over gRPC</li>
-          <li>Infrastructure management with Terraform, Gitlab, Service Mesh and TriggerMesh</li>
-          <li>Guided teams in refactoring monoliths into serverless microservices using AWS Lambda </li>
-          <li>Support development and operations teams to decouple microservices to serverless architectures</li>
-        </ul>
-      </article>
+        <article class="exp-card">
+          <div class="exp-card__header">
+            <div>
+              <p class="exp-card__company">Vozy</p>
+              <h4 class="exp-card__title">DevOps Engineer Consultant</h4>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Feb 2024 — Mar 2024</span>
+            </div>
+          </div>
+          <ul class="exp-card__list">
+            <li><strong>Cloud architecture design</strong> — EKS-based architecture supporting multiple microservices communicating over gRPC with a service mesh layer.</li>
+            <li><strong>Serverless migration</strong> — Guided engineering teams in refactoring monolithic services into serverless microservices using AWS Lambda.</li>
+            <li><strong>Infrastructure</strong> — Terraform, GitLab CI, TriggerMesh event-driven workflows, and Service Mesh integration.</li>
+          </ul>
+          <div class="exp-card__tags">
+            <span>EKS</span><span>Terraform</span><span>AWS Lambda</span><span>gRPC</span><span>Service Mesh</span><span>TriggerMesh</span>
+          </div>
+        </article>
 
-      <article class="exp_item">
-        <h4 class="item_title">Imagemaker - DevOps Engineer</h4>
-        <p class="item_preTitle">Oct. 2023 - May. 2024</p>
-        <ul class="description">
-          <li>Managed IAM roles and user policies for secure cloud access</li>
-          <li>AWS account cost management and FinOps optimization</li>
-          <li>Kubernetes monitoring and management</li>
-          <li>Python scripting for automation</li>
-        </ul>
-      </article>
+        <article class="exp-card">
+          <div class="exp-card__header">
+            <div>
+              <p class="exp-card__company">Imagemaker</p>
+              <h4 class="exp-card__title">DevOps Engineer</h4>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Oct 2023 — May 2024</span>
+            </div>
+          </div>
+          <ul class="exp-card__list">
+            <li><strong>FinOps</strong> — AWS account cost management, Cost Explorer analysis, and tagging strategy driving measurable cloud spend reduction.</li>
+            <li><strong>Security</strong> — IAM role and policy management for least-privilege cloud access across multiple accounts.</li>
+            <li><strong>Kubernetes operations</strong> — Cluster monitoring, alerting, and workload management.</li>
+            <li><strong>Automation</strong> — Python scripting for operational workflows and infrastructure automation.</li>
+          </ul>
+          <div class="exp-card__tags">
+            <span>AWS</span><span>FinOps</span><span>IAM</span><span>Kubernetes</span><span>Python</span>
+          </div>
+        </article>
 
-      <article class="exp_item">
-        <h4 class="item_title">Robinfood - DevOps Engineer</h4>
-        <p class="item_preTitle">Oct. 2022 - Oct. 2023</p>
-        <ul class="description">
-          <li>Full management of AWS services (EC2, ECS, RDS, DMS, S3, IAM)</li>
-          <li>Kubernetes EKS and ArgoCD administration</li>
-          <li>Developed AWS Lambdas with Serverless Framework (Python)</li>
-          <li>Infrastructure automation using Terraform</li>
-          <li>On-premises deployments with Puppetserver</li>
-          <li>CI pipelines creation with Jenkins</li>
-        </ul>
-      </article>
+        <article class="exp-card">
+          <div class="exp-card__header">
+            <div>
+              <p class="exp-card__company">Robinfood</p>
+              <h4 class="exp-card__title">DevOps Engineer</h4>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">Oct 2022 — Oct 2023</span>
+            </div>
+          </div>
+          <ul class="exp-card__list">
+            <li><strong>Full AWS ownership</strong> — EC2, ECS, RDS, DMS, S3, IAM, Lambda, API Gateway, Secrets Manager, CloudFormation.</li>
+            <li><strong>Kubernetes EKS</strong> — Cluster administration and GitOps deployments with ArgoCD.</li>
+            <li><strong>Serverless</strong> — AWS Lambdas developed with the Serverless Framework in Python.</li>
+            <li><strong>IaC</strong> — Infrastructure provisioning with Terraform; on-premises deployments with Puppetserver.</li>
+            <li><strong>CI/CD</strong> — Pipeline creation and maintenance in Jenkins.</li>
+          </ul>
+          <div class="exp-card__tags">
+            <span>AWS</span><span>EKS</span><span>ArgoCD</span><span>Terraform</span><span>Jenkins</span><span>Serverless</span><span>Python</span>
+          </div>
+        </article>
 
-      <article class="exp_item">
-        <h4 class="item_title">Robinfood - QA Engineer | Automation Tester</h4>
-        <p class="item_preTitle">Nov. 2021 - Oct. 2022</p>
-        <ul class="description">
-          <li>Automated testing for APIs and mobile apps (Flutter, Android) using Appium and custom scripts</li>
-          <li>Performance testing with JMeter, K6, and Gatling</li>
-          <li>Functional and non-functional testing for APIs, mobile apps, and web</li>
-          <li>Basic AWS Cloud and Docker container usage</li>
-        </ul>
-      </article>
+        <article class="exp-card exp-card--muted">
+          <div class="exp-card__header">
+            <div>
+              <p class="exp-card__company">Robinfood</p>
+              <h4 class="exp-card__title">QA Engineer · Automation Tester · Intern</h4>
+            </div>
+            <div class="exp-card__meta">
+              <span class="exp-card__date">May 2021 — Oct 2022</span>
+            </div>
+          </div>
+          <ul class="exp-card__list">
+            <li>Automated API and mobile app testing (Flutter, Android) using Appium and custom scripts.</li>
+            <li>Performance testing with JMeter, K6, and Gatling. BDD testing practices.</li>
+            <li>Functional and non-functional testing. MySQL and Skeema database management.</li>
+          </ul>
+          <div class="exp-card__tags">
+            <span>Appium</span><span>JMeter</span><span>K6</span><span>Gatling</span><span>BDD</span><span>MySQL</span>
+          </div>
+        </article>
+      </section>
 
-      <article class="exp_item">
-        <h4 class="item_title">Robinfood - QA Intern</h4>
-        <p class="item_preTitle">May. 2021 - Nov. 2021</p>
-        <ul class="description">
-          <li>Functional and non-functional testing</li>
-          <li>Database management with MySQL and Skeema</li>
-        </ul>
-      </article>
-    </section>
-    <section class="education-and-certifications">
-      <div class="education-certifications-container">
-        <div class="education">
-          <h3 class="title">Education</h3>
-          <div class="edu_item">
-            <h4 class="item_title">Bachelor's Degree - Systems Engineering</h4>
-            <p class="item_subtitle">Universidad Central de Colombia</p>
+      <!-- TECH STACK -->
+      <section class="section" id="stack">
+        <h3 class="section__title"><span class="section__num">02</span>Tech Stack</h3>
+        <div class="stack-grid">
+          <div class="stack-group">
+            <p class="stack-group__label">// kubernetes &amp; cloud</p>
+            <div class="stack-pills">
+              <span>Kubernetes (EKS)</span><span>AWS</span><span>Google Cloud</span><span>ArgoCD</span>
+              <span>FluxCD</span><span>Kustomize</span><span>Knative</span><span>Helm</span>
+              <span>Fargate</span><span>ECS</span><span>EC2</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <p class="stack-group__label">// platform &amp; idp</p>
+            <div class="stack-pills">
+              <span>GitOps Pipelines</span><span>Terraform</span><span>Packer</span>
+              <span>CloudFormation</span><span>SAM</span><span>Ansible</span><span>Puppet</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <p class="stack-group__label">// languages &amp; frameworks</p>
+            <div class="stack-pills">
+              <span>Java (Spring Boot)</span><span>Golang</span><span>Python</span>
+              <span>Scala</span><span>Bash</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <p class="stack-group__label">// ci/cd &amp; devops</p>
+            <div class="stack-pills">
+              <span>Jenkins</span><span>GitLab CI/CD</span><span>CircleCI</span>
+              <span>GitHub Actions</span><span>SonarQube</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <p class="stack-group__label">// observability</p>
+            <div class="stack-pills">
+              <span>Datadog</span><span>ELK Stack</span><span>New Relic</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <p class="stack-group__label">// testing</p>
+            <div class="stack-pills">
+              <span>JMeter</span><span>K6</span><span>Gatling</span><span>Appium</span><span>BDD</span>
+            </div>
           </div>
         </div>
-    
-        <div class="certifications">
-          <h3 class="title">Cloud Certifications</h3>
-          <ul class="certification_list">
-            <li><a class="link-underline" href="https://www.credly.com/badges/dddbb105-0f5f-41d5-91db-f254bf8befd6/linked_in_profile" target="_blank">AWS Certified Solutions Architect – Associate</a></li>
-            <li><a class="link-underline" href="https://www.credly.com/badges/a3a229da-6cbf-4ce9-95bd-23b83d105041" target="_blank">AWS Knowledge: Architecting Badge</a></li>
-            <li><a class="link-underline" href="https://www.credly.com/badges/ed138228-0ba9-4e19-b52d-98259e3ae179/linked_in_profile" target="_blank">AWS Technology Serverless Badge</a></li>
-            <li><a class="link-underline" href="https://www.credly.com/badges/36a9b073-bec3-4bb7-ad62-b4bb7ba97f3e/public_url" target="_blank">AWS Partner: Accreditation (Technical)</a></li>
-            <li><a class="link-underline" href="#" onclick="openPDFViewer('azureAiViewer.html')">AI-102T00-A - Microsoft Azure AI Solution</a></li>
-          </ul>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="section" id="certifications">
+        <h3 class="section__title"><span class="section__num">03</span>Certifications</h3>
+        <div class="cert-grid">
+          <div class="cert-card cert-card--highlight">
+            <div class="cert-card__icon">★</div>
+            <div>
+              <p class="cert-card__issuer">Amazon Web Services</p>
+              <p class="cert-card__name">AWS Community Builder</p>
+              <p class="cert-card__note">Recognition for contributions to the AWS developer community</p>
+            </div>
+          </div>
+          <a class="cert-card" href="https://www.credly.com/badges/dddbb105-0f5f-41d5-91db-f254bf8befd6/linked_in_profile" target="_blank">
+            <div class="cert-card__icon">☁</div>
+            <div>
+              <p class="cert-card__issuer">Amazon Web Services</p>
+              <p class="cert-card__name">AWS Certified Solutions Architect — Associate</p>
+            </div>
+            <i data-feather="external-link" class="cert-card__ext"></i>
+          </a>
+          <a class="cert-card" href="https://www.credly.com/badges/a3a229da-6cbf-4ce9-95bd-23b83d105041" target="_blank">
+            <div class="cert-card__icon">⬡</div>
+            <div>
+              <p class="cert-card__issuer">Amazon Web Services</p>
+              <p class="cert-card__name">AWS Knowledge: Architecting Badge</p>
+            </div>
+            <i data-feather="external-link" class="cert-card__ext"></i>
+          </a>
+          <a class="cert-card" href="https://www.credly.com/badges/ed138228-0ba9-4e19-b52d-98259e3ae179/linked_in_profile" target="_blank">
+            <div class="cert-card__icon">λ</div>
+            <div>
+              <p class="cert-card__issuer">Amazon Web Services</p>
+              <p class="cert-card__name">AWS Technology Serverless Badge</p>
+            </div>
+            <i data-feather="external-link" class="cert-card__ext"></i>
+          </a>
+          <a class="cert-card" href="https://www.credly.com/badges/36a9b073-bec3-4bb7-ad62-b4bb7ba97f3e/public_url" target="_blank">
+            <div class="cert-card__icon">✦</div>
+            <div>
+              <p class="cert-card__issuer">Amazon Web Services</p>
+              <p class="cert-card__name">AWS Partner: Accreditation (Technical)</p>
+            </div>
+            <i data-feather="external-link" class="cert-card__ext"></i>
+          </a>
+          <a class="cert-card" href="#" onclick="openPDFViewer('azureAiViewer.html')">
+            <div class="cert-card__icon">◈</div>
+            <div>
+              <p class="cert-card__issuer">Microsoft Azure</p>
+              <p class="cert-card__name">AI-102T00-A: Azure AI Solution</p>
+            </div>
+            <i data-feather="external-link" class="cert-card__ext"></i>
+          </a>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer>
-    <section class="contact">
-      <h3 class="title">Contact</h3>
-      <p class="description">Bogotá, Colombia</p>
-      <p class="description">jlozanoa6@ucentral.edu.co</p>
-      <p class="description"><a href="https://wa.me/+573005302178">+57 300 530 2178</a></p>
-    </section>
+      <!-- EDUCATION -->
+      <section class="section" id="education">
+        <h3 class="section__title"><span class="section__num">04</span>Education</h3>
+        <div class="edu-card">
+          <div class="edu-card__icon"><i data-feather="book-open"></i></div>
+          <div>
+            <p class="edu-card__school">Universidad Central de Colombia</p>
+            <h4 class="edu-card__degree">Bachelor's Degree — Systems Engineering</h4>
+          </div>
+        </div>
+      </section>
 
-    <section class="social">
-      <h3 class="title">Socials</h3>
-      <div class="social_items">
-        <a href="https://github.com/snakierboss52/" target="_blank" class="social_item">
-          <i data-feather="github"></i>
-          <span>/snakierboss52</span>
-        </a>
-        <a href="https://www.linkedin.com/in/jorge-lozano-arenas" target="_blank" class="social_item">
-          <i data-feather="linkedin"></i>
-          <span>/Jorge Lozano Arenas</span>
-        </a>
-        <a href="https://medium.com/@jlozanoa6" target="_blank" class="social_item">
-          <i data-feather="medium"></i>
-          <span>My Articles on medium</span>
-        </a>
-      </div>
-    </section>
-  </footer>
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <h3 class="section__title"><span class="section__num">05</span>Contact</h3>
+        <div class="contact-row">
+          <a href="mailto:jlozanoa6@ucentral.edu.co" class="contact-item">
+            <i data-feather="mail"></i><span>jlozanoa6@ucentral.edu.co</span>
+          </a>
+          <a href="https://wa.me/+573005302178" class="contact-item">
+            <i data-feather="phone"></i><span>+57 300 530 2178</span>
+          </a>
+          <span class="contact-item">
+            <i data-feather="map-pin"></i><span>Bogotá, Colombia</span>
+          </span>
+        </div>
+      </section>
+
+    </main>
+  </div>
 
   <script>
     feather.replace();
+    function openPDFViewer(f) { window.open(f, '_blank'); }
 
-    function openPDFViewer(pdfFile) {
-      window.open(pdfFile, '_blank');
-    }
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const a = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+          if (a) a.classList.add('active');
+        }
+      });
+    }, { threshold: 0.25 });
+    sections.forEach(s => io.observe(s));
+
+    const cards = document.querySelectorAll('.exp-card, .cert-card, .stack-group');
+    const co = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          co.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(c => co.observe(c));
   </script>
 </body>
-
 </html>
